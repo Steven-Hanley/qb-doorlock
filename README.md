@@ -1,30 +1,35 @@
+## Reason For Fork
+
+This resource has been forked in order to maintain personal changes to the resource for SN8
+
 # qb-doorlock
+
 Doorlock System For QBCore
 
 This doorlock system is based on [nui_doorlock by thelindat](https://github.com/thelindat/nui_doorlock) and contains compatibility with it's format.
 
 ## Dependencies
 
-* [qb-core](https://github.com/qbcore-framework/qb-core)
-* [qb-input](https://github.com/qbcore-framework/qb-input)
-* [qb-lockpick](https://github.com/qbcore-framework/qb-lockpick)
+- [qb-core](https://github.com/qbcore-framework/qb-core)
+- [qb-input](https://github.com/qbcore-framework/qb-input)
+- [qb-lockpick](https://github.com/qbcore-framework/qb-lockpick)
 
 ## Features
 
-* Quick in-game door creation with /newdoor
-* Multiple door types to support all possible doors
-* Support for item checking, multiple or single items
-* Support for citizenid, gang and job checking
-* Support for qb-lockpick
-* NUI Text as interaction text
-* Great performance
-* Uses the native door system
-* Support for object names and hashes
-* Play any sound you want when unlocking/locking a door
-* Highly customisable
-* Auto lock, to automatically lock a door after it has been opened
-* Admin access option
-* Change color based on locked state
+- Quick in-game door creation with /newdoor
+- Multiple door types to support all possible doors
+- Support for item checking, multiple or single items
+- Support for citizenid, gang and job checking
+- Support for qb-lockpick
+- NUI Text as interaction text
+- Great performance
+- Uses the native door system
+- Support for object names and hashes
+- Play any sound you want when unlocking/locking a door
+- Highly customisable
+- Auto lock, to automatically lock a door after it has been opened
+- Admin access option
+- Change color based on locked state
 
 ## Single Door Configuration
 
@@ -49,18 +54,18 @@ This doorlock system is based on [nui_doorlock by thelindat](https://github.com/
 
       ['somedoubledoor'] = { -- The index of the table, this is used as the doorID, can be a number or a string
             doors = { -- Table of doors which holds both doors' data
-			{
-				objName = 'v_ilev_rc_door2', -- Door object name can be a string or a number. Alias: objHash = 'v_ilev_rc_door2',
-				objYaw = 135.0, -- Heading of the door. Alias: objHeading = 135.0,
-				objCoords = vec3(-447.7283, 6006.702, 31.86523), -- Object coords
-			},
+    		{
+    			objName = 'v_ilev_rc_door2', -- Door object name can be a string or a number. Alias: objHash = 'v_ilev_rc_door2',
+    			objYaw = 135.0, -- Heading of the door. Alias: objHeading = 135.0,
+    			objCoords = vec3(-447.7283, 6006.702, 31.86523), -- Object coords
+    		},
 
-			{
-				objName = 'v_ilev_rc_door2', -- Door object name can be a string or a number. Alias: objHash = 'v_ilev_rc_door2',
-				objYaw = -45.0,  -- Heading of the door. Alias: objHeading = -45.0,
-				objCoords = vec3(-449.5656, 6008.538, 31.86523), -- Object coords
-			},
-		},
+    		{
+    			objName = 'v_ilev_rc_door2', -- Door object name can be a string or a number. Alias: objHash = 'v_ilev_rc_door2',
+    			objYaw = -45.0,  -- Heading of the door. Alias: objHeading = -45.0,
+    			objCoords = vec3(-449.5656, 6008.538, 31.86523), -- Object coords
+    		},
+    	},
             textCoords = vec3(-448.67, 6007.52, 31.86523), -- Coords for the interaction text
             authorizedJobs = { ['police'] = 0 }, -- Job access (checks for a minimum grade of 0)
             authorizedGangs = { ['vagos'] = 0 }, -- Gang access (checks for a minimum grade of 0)
